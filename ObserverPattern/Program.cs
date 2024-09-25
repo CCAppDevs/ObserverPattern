@@ -4,6 +4,14 @@ Console.WriteLine("Hello, Design Patterns!");
 
 School school = new School(1, "Centralia");
 
-school.ToggleOpenStatus();
+TextNotifier notifier = new TextNotifier();
 
-Console.WriteLine("The School is " + school.IsSchoolOpen);
+school.Register(notifier);
+
+
+school.ToggleOpenStatus();
+Console.WriteLine();
+school.ToggleOpenStatus();
+Console.WriteLine();
+school.ToggleOpenStatus();
+Console.WriteLine();
