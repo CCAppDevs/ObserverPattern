@@ -11,6 +11,7 @@ namespace ObserverPattern
         // properties of a school
         public int SchoolId { get; set; }
         public string SchoolName { get; set; }
+        // jesse made a change to illustrate git
         public bool IsSchoolOpen { get; set; }
 
         public List<ISchoolStatusSubscriber> Subscribers { get; set; }
